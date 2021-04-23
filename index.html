@@ -5,9 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <div id="app">
+    <h2>
+      Bitcoin Price
+    </h2>
+    <ul>
+      <li v-for="(rate, currency) in bpi">
+        {{currency}}: {{rate.rate_float}}
+      </li>
+    </ul>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js"></script>
   <script src="js/main.js">
+  
+  </script>
+  
 </body>
 </html>
